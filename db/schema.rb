@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180425044043) do
+ActiveRecord::Schema.define(version: 20180425094816) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "listings", force: :cascade do |t|
-    t.string "questions"
-    t.text "answers"
-    t.integer "votes"
+    t.string "question"
+    t.text "answer"
+    t.integer "vote"
     t.string "headline"
     t.string "person_of_interest"
     t.datetime "created_at", null: false
